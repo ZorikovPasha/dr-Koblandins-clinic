@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,600;0,700;1,700&family=M+PLUS+1p:wght@400;500;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -16,15 +19,419 @@
     
   <header class="header">
     <div class="container">
-      
+      <div class="header__inner">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Наши работы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Какие проблемы решает</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Наши волшебники</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo" href="#">
+          <img src="images/logo.png" alt="logo">
+        </a>
+        <div class="header__phones">
+          <button class="header__phones-btn">Заказать звонок</button>
+          <div class="header__phones-item">
+            <p class="header__phones-text">г.Алматы</p>
+            <a class="header__phones-tel" href="tel:+77757053333">+7 775 705 33 33</a>
+          </div>
+          <div class="header__phones-item">
+            <p class="header__phones-text">г.Нур-Султан</p>
+            <a class="header__phones-tel" href="tel:+77757053333">+7 775 705 33 33</a>
+          </div>
+        </div>
+        <div class="header__socials">
+          <a class="header__social" href="#">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="22" height="22" fill="white"/>
+              <path d="M10.9973 5.00343C8.53975 5.00343 6.20602 4.78498 5.31463 7.07088C4.94643 8.01499 4.9999 9.24112 4.9999 10.9968C4.9999 12.5374 4.95049 13.9854 5.31463 14.922C6.20399 17.2093 8.55667 16.9902 10.996 16.9902C13.3493 16.9902 15.7758 17.235 16.678 14.922C17.0469 13.9685 16.9928 12.7606 16.9928 10.9968C16.9928 8.65545 17.122 7.14392 15.9856 6.00908C14.835 4.85937 13.279 5.00343 10.9946 5.00343H10.9973ZM10.4599 6.08348C15.5863 6.07536 16.2388 5.50592 15.8787 13.4166C15.7508 16.2145 13.6187 15.9074 10.998 15.9074C6.21956 15.9074 6.08216 15.7708 6.08216 10.9941C6.08216 6.16193 6.46119 6.08618 10.4599 6.08213V6.08348ZM14.1988 7.07832C13.8015 7.07832 13.4793 7.40023 13.4793 7.79722C13.4793 8.19421 13.8015 8.51613 14.1988 8.51613C14.5961 8.51613 14.9183 8.19421 14.9183 7.79722C14.9183 7.40023 14.5961 7.07832 14.1988 7.07832ZM10.9973 7.91896C9.29645 7.91896 7.91774 9.29726 7.91774 10.9968C7.91774 12.6963 9.29645 14.074 10.9973 14.074C12.6982 14.074 14.0763 12.6963 14.0763 10.9968C14.0763 9.29726 12.6982 7.91896 10.9973 7.91896ZM10.9973 8.99901C13.6404 8.99901 13.6438 12.9946 10.9973 12.9946C8.35497 12.9946 8.35091 8.99901 10.9973 8.99901Z" fill="#764F96"/>
+            </svg>
+          </a>
+          <a class="header__social" href="#">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="-0.000610352" width="22" height="22" fill="white"/>
+              <path d="M15.3445 14.0491L15.8626 10.8157H12.6204V8.71744C12.6204 7.83316 13.0732 6.97106 14.5254 6.97106H15.9994V4.21877C15.9994 4.21877 14.6619 4 13.383 4C10.7129 4 8.96776 5.54826 8.96776 8.35103V10.8157H5.99939V14.0491H8.96776V21.8638C9.56265 21.9533 10.1729 22 10.7941 22C11.4155 22 12.0254 21.9533 12.6204 21.8638V14.0491H15.3445Z" fill="#764F96"/>
+            </svg>
+          </a>
+          <a class="header__social" href="#">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="22" height="22" fill="white"/>
+              <path d="M13.38 11.2795L9.85707 13.0572C9.71935 13.1339 9.25 13.032 9.25 12.8715V9.22078C9.25 9.05855 9.72311 8.95677 9.86119 9.03766L13.2333 10.9098C13.3748 10.9918 13.5228 11.2 13.38 11.2795ZM18 9.13462C18 7.4037 16.6243 6 14.9276 6H7.07212C5.37541 6 4 7.4037 4 9.13462V12.8646C4 14.5962 5.37541 16 7.07212 16H14.9276C16.6243 16 18 14.5962 18 12.8646V9.13462Z" fill="#764F96"/>
+              </svg>
+
+          </a>
+
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="main"></main>
+  <main class="main">
+    <section class="top">
+      <div class="container">
+        <div class="top__inner">
+          <div class="top__text">
+            <p class="top__label">Dr.Koblandin Clinic</p>
+            <h1 class="top__title">Поднимите мне веки!</h1>
+            <p class="top__subtitle">Выгодные условия блефаропластики</p>
+            <p class="top__benefit">Экономия до 200 000 тенге</p>
+              <p class="top__benefit">Рассрочка до 6 месяцев без переплаты</p>  
+            <button class="top__btn btn">Бесплатная консультация</button>
+          </div>
+          <div class="top__images">
+            <img src="images/top-photo.png" alt="photo">
+          </div>
+        </div>
+      </div>  
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <h3 class="about__title title"></h3>
+          <div class="about__box">
+            <div class="about__text">
+              <p class="about__text-par">
+                <span>Пластика нижних век</span>
+                 — данная операция позволяет устранить дряблость и провисание кожи. Так же удаётся скрыть чрезмерно выделяющиеся слёзные борозды
+              </p>
+              <p class="about__text-par">
+                <span>Пластика верхних век</span>
+                 — показанием являются грыжи, которые служат утяжелителем, из-за чего наблюдается опускание века
+              </p>
+              <p class="about__text-par">
+                <span>Круговая пластика век</span>
+                 — вмешательство включает работу над верхними и нижними веками. С помощью данной операции удаётся добиться максимально завершённого и целостного результата
+              </p>
+
+            </div>
+            <div class="about__images">
+              <img src="" alt="">
+            </div>
+            <div class="about__text">
+              <p class="about__text-par">
+                <span>Трансконъюнктивальная блефаропластика</span>
+                 — позволяет решить внешние проблемы путём удаления жировиков и грыж через специальные проколы на слизистой
+              </p>
+              <p class="about__text-par">
+                <span>Кантопексия</span>
+                 — назначается с целью поднятия наружных уголков глаз и последующей их фиксации на месте
+              </p>
+              <p class="about__text-par">
+                <span>Перераспределение жировых участков</span>
+                 — показанием к вмешательству данного типа является очевидная асимметрия зоны лица вокруг глаз
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works">
+      <div class="container-wide">
+        <div class="container">
+          <h3 class="works__title title">Работы наших специалистов</h3>
+          <div class="works__line">
+            <p class="works__text">
+              Подписывайтесь на наш
+              <span>instagram</span>
+            </p>
+            <button class="works__link">Подписаться</button>  
+          </div>
+          <div class="works__items">
+            <div class="works__item">
+              <img src="images/works/1.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/2.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/3.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/4.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/5.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/6.png" alt="work">
+            </div>
+
+            <div class="works__item">
+              <img src="images/works/1.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/2.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/3.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/4.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/5.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/6.png" alt="work">
+            </div>
+
+            <div class="works__item">
+              <img src="images/works/1.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/2.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/3.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/4.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/5.png" alt="work">
+            </div>
+            <div class="works__item">
+              <img src="images/works/6.png" alt="work">
+            </div>
+          </div>
+          <a class="works__btn btn arrow-btn" href="#">Смотреть все работы</a>
+        </div>  
+      </div>
+    </section>
+
+    <section class="problems">
+      <div class="container-wide">
+        <div class="container">
+          <h3 class="problems__title title">Какие проблемы решает блеферопластика</h3>
+          <div class="problems__items">
+            <div class="problems__row">
+              <div class="problems__item">
+                <img src="images/problems/1.svg" alt="problem solving">
+              </div>
+              <div class="problems__item">
+                <img src="images/problems/2.svg" alt="problem solving">
+              </div>
+              <div class="problems__item">
+                <img src="images/problems/3.svg" alt="problem solving">
+              </div>
+              <div class="problems__item">
+                <img src="images/problems/4.svg" alt="problem solving">
+              </div>
+            </div>
+            <div class="problems__row">
+              <div class="problems__item">
+                <img src="images/problems/5.svg" alt="problem solving">
+              </div>
+              <div class="problems__item">
+                <img src="images/problems/6.svg" alt="problem solving">
+              </div>
+              <div class="problems__item">
+                <img src="images/problems/7.svg" alt="problem solving">
+              </div>
+              <div class="problems__item">
+                <img src="images/problems/8.svg" alt="problem solving">
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container-wide">
+        <div class="container">
+          <h3 class="why__title title">Почему выбирают нашу клинику</h3>
+
+          <div class="why__row">
+            <div class="why__item">
+              <p class="why__counter">01</p>
+              <div class="why__box">
+                <p class="why__title">Онлайн консультация бесплатно</p>
+                <p class="why__text">
+                  Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом
+                </p>
+              </div>
+            </div>
+            <div class="why__item">
+              <p class="why__counter">02</p>
+              <div class="why__box">
+                <p class="why__title">Бесплатный осмотр после операции в течении года</p>
+                <p class="why__text">
+                  Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом
+                </p>
+              </div>
+            </div>
+            <div class="why__item">
+              <p class="why__counter">03</p>
+              <div class="why__box">
+                <p class="why__title">Лабораторные анализы можно сдать в нашей клинике</p>
+                <p class="why__text">
+                  Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="why__row">
+            <div class="why__item">
+              <p class="why__counter">04</p>
+              <div class="why__box">
+                <p class="why__title">Рассрочка без переплаты до 6 месяцев</p>
+                <p class="why__text">
+                  Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом
+                </p>
+
+              </div>
+            </div>
+            <div class="why__item">
+              <p class="why__counter">05</p>
+              <div class="why__box">
+                <p class="why__title">Опыт пластических хирургов более 16 лет</p>
+                <p class="why__text">
+                  Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом
+                </p>
+
+              </div>
+            </div>
+            <div class="why__item">
+              <p class="why__counter">06</p>
+              <div class="why__box">
+                <p class="why__title">Более 5000 проведенных операций по блефаропластике</p>
+                <p class="why__text">
+                  Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h3 class="reviews__title title">Отзывы наших клиентов</h3>
+        <p class="reviews__line">
+          <p class="reviews__text">
+            Подписывайтесь на наш
+            <span>youtube</span>
+          </p>
+          <a class="reviews__link" href="#">Подписаться</a>
+        </p>
+        <div class="reviews__slider">
+          <div class="reviews__item">
+
+          </div>
+        </div>
+        <a class="reviews__btn btn arrow-btn" href="#"></a>
+      </div>  
+    </section>
+
+    <section class="members">
+      <div class="container">
+        <h3 class="members__title title">Наши волшебники</h3>
+        <div class="members__slider">
+          <div class="members__item member">
+            <div class="member__images">
+              <img src="images/members/1.jpg" alt="members photo">
+            </div>
+            <p class="member__post">Пластический хирург</p>
+            <p class="member__name">Кулесбаев Алибек Алдабергенович</p>
+          </div>
+          <div class="members__item member">
+            <div class="member__images">
+              <img src="images/members/2.jpg" alt="members photo">
+            </div>
+            <p class="member__post">Анестезиолог — Реаниматолог</p>
+            <p class="member__name">Фёдорова Наталья Николаевна</p>
+          </div>
+          <div class="members__item member">
+            <div class="member__images">
+              <img src="images/members/3.jpg" alt="members photo">
+            </div>
+            <p class="member__post">Хирург — трансплантолог</p>
+            <p class="member__name">Петров Рашид Максимович</p>
+          </div>
+          <div class="members__item member">
+            <div class="member__images">
+              <img src="images/members/4.jpg" alt="members photo">
+            </div>
+            <p class="member__post">Хирург 1 ранга</p>
+            <p class="member__name">Маркова Фатима Рашидовна</p>
+          </div>
+        </div>
+        <button class="members__btn btn">Получить консультацию</button>
+        <button class="members__signup">Записаться на приём</button>
+      </div>  
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
-      
+      <div class="footer__main">
+        <div class="footer__content">
+          <div class="footer__socials">
+            <img src="images/footer-logo.svg" alt="logo">
+            <div class="footer__line">
+              <a class="footer__social" href="#">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="22" height="22" fill="#764F96"/>
+                  <path d="M10.9973 5.00343C8.53975 5.00343 6.20602 4.78498 5.31463 7.07088C4.94643 8.01499 4.9999 9.24112 4.9999 10.9968C4.9999 12.5374 4.95049 13.9854 5.31463 14.922C6.20399 17.2093 8.55667 16.9902 10.996 16.9902C13.3493 16.9902 15.7758 17.235 16.678 14.922C17.0469 13.9685 16.9928 12.7606 16.9928 10.9968C16.9928 8.65545 17.122 7.14392 15.9856 6.00908C14.835 4.85937 13.279 5.00343 10.9946 5.00343H10.9973ZM10.4599 6.08348C15.5863 6.07536 16.2388 5.50592 15.8787 13.4166C15.7508 16.2145 13.6187 15.9074 10.998 15.9074C6.21956 15.9074 6.08216 15.7708 6.08216 10.9941C6.08216 6.16193 6.46119 6.08618 10.4599 6.08213V6.08348ZM14.1988 7.07832C13.8015 7.07832 13.4793 7.40023 13.4793 7.79722C13.4793 8.19421 13.8015 8.51613 14.1988 8.51613C14.5961 8.51613 14.9183 8.19421 14.9183 7.79722C14.9183 7.40023 14.5961 7.07832 14.1988 7.07832ZM10.9973 7.91896C9.29645 7.91896 7.91774 9.29726 7.91774 10.9968C7.91774 12.6963 9.29645 14.074 10.9973 14.074C12.6982 14.074 14.0763 12.6963 14.0763 10.9968C14.0763 9.29726 12.6982 7.91896 10.9973 7.91896ZM10.9973 8.99901C13.6404 8.99901 13.6438 12.9946 10.9973 12.9946C8.35497 12.9946 8.35091 8.99901 10.9973 8.99901Z" fill="white"/>
+                </svg>
+              </a>
+              <a class="footer__social" href="#">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="-0.000610352" width="22" height="22" fill="#764F96"/>
+                  <path d="M15.3445 14.0491L15.8626 10.8157H12.6204V8.71744C12.6204 7.83316 13.0732 6.97106 14.5254 6.97106H15.9994V4.21877C15.9994 4.21877 14.6619 4 13.383 4C10.7129 4 8.96776 5.54826 8.96776 8.35103V10.8157H5.99939V14.0491H8.96776V21.8638C9.56265 21.9533 10.1729 22 10.7941 22C11.4155 22 12.0254 21.9533 12.6204 21.8638V14.0491H15.3445Z" fill="white"/>
+                </svg>
+              </a>
+              <a class="footer__social" href="#">
+              </a>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="22" height="22" fill="#764F96"/>
+                <path d="M13.38 11.2795L9.85707 13.0572C9.71935 13.1339 9.25 13.032 9.25 12.8715V9.22078C9.25 9.05855 9.72311 8.95677 9.86119 9.03766L13.2333 10.9098C13.3748 10.9918 13.5228 11.2 13.38 11.2795ZM18 9.13462C18 7.4037 16.6243 6 14.9276 6H7.07212C5.37541 6 4 7.4037 4 9.13462V12.8646C4 14.5962 5.37541 16 7.07212 16H14.9276C16.6243 16 18 14.5962 18 12.8646V9.13462Z" fill="white"/>
+                </svg>
+            </div>
+          </div>
+          <div class="footer__contacts">
+            <p class="footer__title"></p>
+            <div class="footer__box">
+              <p class="footer__city">г.Алматы</p>
+              <a href="tel:+77757053333" class="footer__phone">+7 775 705 33 33</a>
+              <p class="footer__address">ул.Маркова,75, уг.Аль-Фараби</p>
+              <a class="footer__link" href="#">Смотреть на карте</a>
+            </div>
+            <div class="footer__box">
+              <p class="footer__city">г.Нур-Султан</p>
+              <a href="tel:+77087053333" class="footer__phone">+7 708 705 33 33</a>
+              <p class="footer__address"></p>
+              <a class="footer__link" href="#">Смотреть на карте</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__map">
+          <img src="images/map.jpg" alt="map">
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__par">© Copyright 2021 - Dr.KoblandinClinic.ru</p>
+        <p class="footer__par">All Rights Reserved</p>
+      </div>
     </div>
   </footer>
   
